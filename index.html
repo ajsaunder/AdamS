@@ -74,7 +74,22 @@ h1, h2 , h3{
   width: 100%;
 }
 
+.heading-with-icons {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 
+.heading-with-icons img.side-icon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 footer {
   font-size: 14px;
@@ -107,8 +122,10 @@ a:active {
         <h1>SAUNDERS SNACK BAR</h1>
         <p class="established">Est. 2025</p>
         <hr>
-        <section>
-        <img src="images/hamburger.jpg" alt="hamburger icon"/>  <h2>Food</h2> <img src="images/hamburger.jpg" alt="hamburger icon"/>
+        <section class="heading-with-icon">
+        <img src="images/hamburger.jpg" alt="hamburger icon" class="side-icon"/>  
+          <h2>Food</h2> 
+          <img src="images/hamburger.jpg" alt="hamburger icon" class="side-icon"/>
           <article class="item">
             <p class="flavor">Hamburgers</p>
           </article>
@@ -123,7 +140,9 @@ a:active {
           </article>
 
         <section>
-            <img src="images/cupcake.png" alt="cupcake icon"/>    <h2>Desserts</h2>      <img src="images/cupcake.png" alt="cupcake icon"/>
+            <img src="images/dessert.jpg" alt="cupcake icon" class="side-icon"/>    
+          <h2>Desserts</h2>      
+          <img src="images/dessert.jpg" alt="cupcake icon" class="side-icon"/>
          
           <article class="item">
             <p class="dessert">Popsicles</p>
@@ -133,7 +152,9 @@ a:active {
           </article>
         </section>
 <section>
-<h3> Beverages </h3>
+<img src="images/beverage.png" alt="cupcake icon" class="side-icon"/>  
+  <h3> Beverages </h3> 
+  <img src="images/beverage.png" alt="cupcake icon" class="side-icon"/>  
   <article class="item">
             <p class="flavor">Strawberry Agua Fresca</p>
           </article>
